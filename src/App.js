@@ -9,10 +9,10 @@ function App() {
     setUsers((prevUsers) => [...prevUsers, newUser]);
   };
   return (
-    <div>
+    <React.Fragment>
       <AddUser onAddUser={addUserHandler}></AddUser>
       <UserList users={users}></UserList>
-    </div>
+    </React.Fragment>
   );
 }
 
